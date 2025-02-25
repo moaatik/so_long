@@ -6,7 +6,7 @@
 /*   By: moaatik <moaatik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 20:08:25 by moaatik           #+#    #+#             */
-/*   Updated: 2025/02/20 00:52:33 by moaatik          ###   ########.fr       */
+/*   Updated: 2025/02/25 10:47:48 by moaatik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,7 @@ int	main(int ac, char **av)
 	game->moves = 0;
 	render_map(game);
 	mlx_hook(game->window, 2, 0, key_press, game);
+	mlx_hook(game->window, 17, 0, handle_cross, game);
 	mlx_loop(game->mlx);
+	return (0);
 }

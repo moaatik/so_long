@@ -6,7 +6,7 @@
 /*   By: moaatik <moaatik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 19:48:12 by moaatik           #+#    #+#             */
-/*   Updated: 2025/02/19 19:29:29 by moaatik          ###   ########.fr       */
+/*   Updated: 2025/02/25 10:48:34 by moaatik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,5 +88,13 @@ int	input(char **av, t_game *game)
 		return (1);
 	}
 	update(game);
+	return (0);
+}
+
+int	handle_cross(t_game *game)
+{
+	mlx_destroy_window(game->mlx, game->window);
+	destroy_images(game);
+	exit(0);
 	return (0);
 }

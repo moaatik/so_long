@@ -6,7 +6,7 @@
 /*   By: moaatik <moaatik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 20:05:23 by moaatik           #+#    #+#             */
-/*   Updated: 2025/02/20 00:19:07 by moaatik          ###   ########.fr       */
+/*   Updated: 2025/02/25 10:53:05 by moaatik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ int		check_input(char *str);
 void	render_map(t_game *game);
 int		init_images(t_game *game);
 char	**handle_input(char **av);
+int		handle_cross(t_game *game);
 void	destroy_images(t_game *game);
 int		check_valid_path(t_game *game);
 int		input(char **av, t_game *game);
